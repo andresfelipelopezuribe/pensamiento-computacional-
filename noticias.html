@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Noticias y novedades del Nodo de Pensamiento Computacional.">
+
+    <title>Noticias</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #073b4c, #087e8b);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 19px;
+        }
+
+        nav {
+            background-color: #062c3d;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 8px;
+            display: inline-block;
+            padding: 5px;
+        }
+
+        nav a:hover {
+            color: #4dd0e1;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1100px;
+            margin: 35px auto;
+        }
+
+        .seccion {
+            background-color: white;
+            padding: 35px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+        }
+
+        .seccion h2 {
+            color: #087e8b;
+            font-size: 29px;
+            margin-bottom: 15px;
+        }
+
+        .seccion h3 {
+            color: #073b4c;
+            margin-bottom: 10px;
+        }
+
+        .seccion p {
+            font-size: 17px;
+            text-align: justify;
+            margin-bottom: 12px;
+        }
+
+        .noticias {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .noticia {
+            background-color: #eef8fa;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #087e8b;
+        }
+
+        .fecha {
+            color: #087e8b;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .noticia h3 {
+            font-size: 22px;
+        }
+
+        .espacio {
+            border: 2px dashed #9bb8bf;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 15px;
+            color: #5b6b70;
+        }
+
+        footer {
+            background-color: #062c3d;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .seccion {
+                padding: 25px 20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <h1>Noticias</h1>
+
+        <p>
+            Novedades y acontecimientos tecnológicos
+        </p>
+
+    </header>
+
+
+    <!-- MENÚ -->
+
+    <nav>
+
+        <a href="index.html">Inicio</a>
+
+        <a href="quienes_somos.html">¿Quiénes somos?</a>
+
+        <a href="pensamiento.html">Pensamiento Computacional</a>
+
+        <a href="tecnologia.html">Tecnología</a>
+
+        <a href="ferias.html">Ferias Tecnológicas</a>
+
+        <a href="proyectos.html">Proyectos</a>
+
+        <a href="galeria.html">Galería</a>
+
+        <a href="noticias.html">Noticias</a>
+
+        <a href="recursos.html">Recursos</a>
+
+        <a href="contacto.html">Contacto</a>
+
+    </nav>
+
+
+    <main class="contenedor">
+
+
+        <!-- INTRODUCCIÓN -->
+
+        <section class="seccion">
+
+            <h2>Noticias y novedades</h2>
+
+            <p>
+                En esta sección publicaremos noticias, actividades,
+                acontecimientos y novedades relacionadas con nuestro
+                proyecto y con la tecnología.
+            </p>
+
+        </section>
+
+
+        <!-- NOTICIA 1 -->
+
+        <section class="seccion">
+
+            <h2>Últimas noticias</h2>
+
+            <div class="noticias">
+
+
+                <article class="noticia">
+
+                    <p class="fecha">
+                        Fecha: __________________
+                    </p>
+
+                    <h3>
+                        📰 Primera noticia
+                    </h3>
+
+                    <p>
+                        Espacio reservado para escribir una noticia
+                        relacionada con el proyecto.
+                    </p>
+
+                </article>
+
+
+                <!-- NOTICIA 2 -->
+
+                <article class="noticia">
+
+                    <p class="fecha">
+                        Fecha: __________________
+                    </p>
+
+                    <h3>
+                        📰 Segunda noticia
+                    </h3>
+
+                    <p>
+                        Espacio reservado para una segunda noticia o
+                        actividad importante.
+                    </p>
+
+                </article>
+
+
+                <!-- NOTICIA 3 -->
+
+                <article class="noticia">
+
+                    <p class="fecha">
+                        Fecha: __________________
+                    </p>
+
+                    <h3>
+                        📰 Tercera noticia
+                    </h3>
+
+                    <p>
+                        Espacio reservado para futuras novedades.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ACTIVIDADES -->
+
+        <section class="seccion">
+
+            <h2>Actividades realizadas</h2>
+
+            <p>
+                Aquí podremos publicar información sobre las actividades
+                realizadas por los integrantes del proyecto.
+            </p>
+
+            <div class="espacio">
+
+                📅 Espacio para agregar actividades y fechas.
+
+            </div>
+
+        </section>
+
+
+        <!-- EVENTOS -->
+
+        <section class="seccion">
+
+            <h2>Próximos eventos</h2>
+
+            <p>
+                En esta sección colocaremos información sobre próximas
+                ferias, exposiciones, talleres o actividades relacionadas
+                con la tecnología.
+            </p>
+
+            <div class="espacio">
+
+                📢 Espacio reservado para próximos eventos.
+
+            </div>
+
+        </section>
+
+
+        <!-- LOGROS -->
+
+        <section class="seccion">
+
+            <h2>Logros y reconocimientos</h2>
+
+            <p>
+                Aquí podremos registrar los reconocimientos, resultados
+                y logros obtenidos por los estudiantes durante el desarrollo
+                del proyecto.
+            </p>
+
+            <div class="espacio">
+
+                🏆 Espacio reservado para logros y reconocimientos.
+
+            </div>
+
+        </section>
+
+
+        <!-- CONCLUSIÓN -->
+
+        <section class="seccion">
+
+            <h2>Actualización de la información</h2>
+
+            <p>
+                Esta página podrá actualizarse cada vez que tengamos una
+                nueva actividad, noticia o acontecimiento importante.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            Somos Nodo de Pensamiento Computacional
+        </p>
+
+        <p>
+            Colegio Técnico San Carlos de San Gil
+        </p>
+
+        <p>
+            Área de Tecnología e Informática
+        </p>
+
+        <p>
+            Proyecto académico
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

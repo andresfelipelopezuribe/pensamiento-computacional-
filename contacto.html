@@ -1,141 +1,221 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Información de contacto del Nodo de Pensamiento Computacional.">
 
     <title>Contacto</title>
 
+
     <style>
+
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
 
         body {
-            font-family: Arial, sans-serif;
-            background: #f2f6f8;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7f9;
             color: #222;
+            line-height: 1.6;
         }
 
+
         header {
-            background: linear-gradient(135deg, #0b3954, #087e8b);
+            background: linear-gradient(135deg, #073b4c, #087e8b);
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 55px 20px;
         }
+
 
         header h1 {
             font-size: 40px;
             margin-bottom: 10px;
         }
 
+
         header p {
-            font-size: 18px;
+            font-size: 19px;
         }
 
+
         nav {
-            background: #062c3d;
-            text-align: center;
+            background-color: #062c3d;
             padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
+
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 12px;
             font-weight: bold;
+            margin: 0 8px;
+            display: inline-block;
+            padding: 5px;
         }
+
 
         nav a:hover {
             color: #4dd0e1;
         }
 
+
         .contenedor {
-            max-width: 900px;
+            width: 90%;
+            max-width: 1100px;
             margin: 35px auto;
-            padding: 20px;
         }
 
-        .contacto {
-            background: white;
+
+        .seccion {
+            background-color: white;
             padding: 35px;
+            margin-bottom: 30px;
             border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
-            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
         }
 
-        .contacto h2 {
+
+        .seccion h2 {
             color: #087e8b;
+            font-size: 29px;
             margin-bottom: 15px;
         }
 
-        .contacto p {
-            line-height: 1.7;
+
+        .seccion p {
             font-size: 17px;
+            margin-bottom: 12px;
         }
 
-        .datos {
-            margin-top: 20px;
-            line-height: 2;
+
+        .tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
         }
+
+
+        .tarjeta {
+            background-color: #eef8fa;
+            width: 45%;
+            min-width: 280px;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+
+        .tarjeta h3 {
+            color: #073b4c;
+            margin-bottom: 10px;
+        }
+
+
+        .tarjeta p {
+            font-size: 16px;
+            word-wrap: break-word;
+        }
+
+
+        .tarjeta a {
+            color: #087e8b;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+
+        .tarjeta a:hover {
+            text-decoration: underline;
+        }
+
 
         .formulario {
-            background: white;
-            padding: 35px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+            margin-top: 20px;
         }
 
-        .formulario h2 {
-            color: #087e8b;
-            margin-bottom: 20px;
-        }
 
-        label {
+        .formulario label {
             display: block;
-            margin-top: 15px;
-            margin-bottom: 7px;
             font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
         }
 
-        input,
-        textarea {
+
+        .formulario input,
+        .formulario textarea {
             width: 100%;
             padding: 12px;
-            border: 1px solid #bbb;
+            border: 1px solid #b8cdd2;
             border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 16px;
         }
 
-        textarea {
-            height: 120px;
+
+        .formulario textarea {
+            height: 130px;
             resize: vertical;
         }
 
-        button {
-            margin-top: 20px;
-            background: #087e8b;
+
+        .boton {
+            background-color: #087e8b;
             color: white;
             border: none;
-            padding: 13px 25px;
+            padding: 12px 25px;
             border-radius: 8px;
+            margin-top: 18px;
             font-size: 16px;
+            font-weight: bold;
             cursor: pointer;
         }
 
-        button:hover {
-            background: #0b3954;
+
+        .boton:hover {
+            background-color: #073b4c;
         }
 
+
+        .aviso {
+            background-color: #eef8fa;
+            border-left: 5px solid #087e8b;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+
         footer {
-            background: #062c3d;
+            background-color: #062c3d;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 30px 20px;
             margin-top: 40px;
         }
+
+
+        footer p {
+            margin: 5px;
+        }
+
 
         @media (max-width: 700px) {
 
@@ -143,86 +223,351 @@
                 font-size: 30px;
             }
 
+
             nav a {
                 display: block;
-                margin: 10px;
+                margin: 8px;
             }
 
-            .contacto,
-            .formulario {
-                padding: 22px;
+
+            .seccion {
+                padding: 25px 20px;
             }
+
+
+            .tarjeta {
+                width: 100%;
+            }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
+    <!-- ENCABEZADO -->
+
     <header>
+
         <h1>Contacto</h1>
-        <p>Conoce más sobre nuestro proyecto</p>
+
+        <p>
+            Comunícate con nuestro equipo
+        </p>
+
     </header>
 
+
+    <!-- MENÚ -->
+
     <nav>
+
         <a href="index.html">Inicio</a>
+
         <a href="quienes_somos.html">¿Quiénes somos?</a>
+
         <a href="pensamiento.html">Pensamiento Computacional</a>
+
+        <a href="tecnologia.html">Tecnología</a>
+
+        <a href="ferias.html">Ferias Tecnológicas</a>
+
         <a href="proyectos.html">Proyectos</a>
+
         <a href="galeria.html">Galería</a>
+
+        <a href="noticias.html">Noticias</a>
+
+        <a href="recursos.html">Recursos</a>
+
         <a href="contacto.html">Contacto</a>
+
     </nav>
+
 
     <main class="contenedor">
 
-        <section class="contacto">
+
+        <!-- INFORMACIÓN -->
+
+        <section class="seccion">
 
             <h2>Información de contacto</h2>
 
             <p>
-                Si deseas conocer más sobre nuestro proyecto de Pensamiento
-                Computacional, puedes utilizar los medios de contacto
-                disponibles.
+                Si deseas conocer más sobre nuestro proyecto o comunicarte
+                con nuestro equipo, puedes utilizar la información que
+                agregaremos en esta sección.
             </p>
 
-            <div class="datos">
-                <p>📧 Correo: __________________________</p>
-                <p>🏫 Institución: Colegio Técnico San Carlos</p>
-                <p>📍 Ciudad: San Gil, Santander</p>
-                <p>💻 Área: Tecnología e Informática</p>
+
+            <div class="tarjetas">
+
+
+                <div class="tarjeta">
+
+                    <h3>👤 Líder del proyecto</h3>
+
+                    <p>
+                        <strong>Andrés Felipe López Uribe</strong>
+                    </p>
+
+                    <p>
+                        Líder y desarrollador web.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>👥 Integrantes</h3>
+
+                    <p>
+                        Samuel Esteban González Portela
+                    </p>
+
+                    <p>
+                        Sara Sofía Rachel Rodríguez Calderón
+                    </p>
+
+                    <p>
+                        Daniel Alejandro Lugo Solano
+                    </p>
+
+                </div>
+
+
             </div>
 
         </section>
 
-        <section class="formulario">
+
+        <!-- DATOS -->
+
+        <section class="seccion">
+
+            <h2>Datos del proyecto</h2>
+
+
+            <div class="tarjetas">
+
+
+                <div class="tarjeta">
+
+                    <h3>🏫 Institución</h3>
+
+                    <p>
+                        Colegio Técnico San Carlos de San Gil
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>💻 Proyecto</h3>
+
+                    <p>
+                        Nodo de Pensamiento Computacional
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>📚 Área</h3>
+
+                    <p>
+                        Tecnología e Informática
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>📍 Ciudad</h3>
+
+                    <p>
+                        San Gil, Santander
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- REDES -->
+
+        <section class="seccion">
+
+            <h2>Redes sociales</h2>
+
+            <p>
+                En este espacio agregaremos las redes sociales del proyecto
+                cuando tengamos los datos correspondientes.
+            </p>
+
+
+            <div class="aviso">
+
+                📱 Instagram:
+                ______________________________
+
+                <br><br>
+
+                📘 Facebook:
+                ______________________________
+
+                <br><br>
+
+                🎵 TikTok:
+                ______________________________
+
+            </div>
+
+        </section>
+
+
+        <!-- CORREO -->
+
+        <section class="seccion">
+
+            <h2>Correo electrónico</h2>
+
+            <p>
+                El correo electrónico será agregado cuando el grupo tenga
+                el correo oficial que utilizará para el proyecto.
+            </p>
+
+
+            <div class="aviso">
+
+                📧 Correo:
+
+                ______________________________
+
+            </div>
+
+        </section>
+
+
+        <!-- FORMULARIO -->
+
+        <section class="seccion">
 
             <h2>Envíanos un mensaje</h2>
 
-            <form>
+            <p>
+                Puedes dejar preparado este formulario para que posteriormente
+                se conecte a un servicio de envío de mensajes.
+            </p>
 
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre"
-                       placeholder="Escribe tu nombre">
 
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo"
-                       placeholder="Escribe tu correo">
+            <form class="formulario"
+                action="#"
+                method="post">
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"
-                          placeholder="Escribe tu mensaje"></textarea>
 
-                <button type="submit">Enviar mensaje</button>
+                <label for="nombre">
+                    Nombre:
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre"
+                    required>
+
+
+                <label for="correo">
+                    Correo electrónico:
+                </label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="Escribe tu correo"
+                    required>
+
+
+                <label for="mensaje">
+                    Mensaje:
+                </label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    placeholder="Escribe tu mensaje"
+                    required></textarea>
+
+
+                <button
+                    type="submit"
+                    class="boton">
+
+                    Enviar mensaje
+
+                </button>
+
 
             </form>
 
         </section>
 
+
+        <!-- MENSAJE -->
+
+        <section class="seccion">
+
+            <h2>Gracias por visitar nuestra página</h2>
+
+            <p>
+                Esperamos que este sitio web te haya permitido conocer más
+                sobre el pensamiento computacional, la tecnología y los
+                proyectos desarrollados por nuestro grupo.
+            </p>
+
+        </section>
+
+
     </main>
 
+
+    <!-- PIE DE PÁGINA -->
+
     <footer>
-        <p>Proyecto educativo - Nodo de Pensamiento Computacional</p>
-        <p>Área de Tecnología e Informática</p>
+
+        <p>
+            Somos Nodo de Pensamiento Computacional
+        </p>
+
+        <p>
+            Colegio Técnico San Carlos de San Gil
+        </p>
+
+        <p>
+            Área de Tecnología e Informática
+        </p>
+
+        <p>
+            Proyecto académico
+        </p>
+
     </footer>
 
+
 </body>
+
 </html>

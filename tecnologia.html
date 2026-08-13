@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Programación, robótica e inteligencia artificial.">
+
+    <title>Tecnología</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #073b4c, #087e8b);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 19px;
+        }
+
+        nav {
+            background-color: #062c3d;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 8px;
+            display: inline-block;
+            padding: 5px;
+        }
+
+        nav a:hover {
+            color: #4dd0e1;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1100px;
+            margin: 35px auto;
+        }
+
+        .seccion {
+            background-color: white;
+            padding: 35px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+        }
+
+        .seccion h2 {
+            color: #087e8b;
+            font-size: 29px;
+            margin-bottom: 15px;
+        }
+
+        .seccion h3 {
+            color: #073b4c;
+            margin-bottom: 10px;
+        }
+
+        .seccion p {
+            font-size: 17px;
+            text-align: justify;
+            margin-bottom: 12px;
+        }
+
+        .tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .tarjeta {
+            background-color: #eef8fa;
+            width: 30%;
+            min-width: 250px;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .tarjeta h3 {
+            margin-bottom: 10px;
+        }
+
+        .tarjeta p {
+            text-align: justify;
+            font-size: 16px;
+        }
+
+        .lista {
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+
+        .lista li {
+            font-size: 17px;
+            margin-bottom: 9px;
+        }
+
+        .ejemplo {
+            background-color: white;
+            border-left: 5px solid #087e8b;
+            padding: 15px;
+            margin-top: 18px;
+            border-radius: 7px;
+        }
+
+        footer {
+            background-color: #062c3d;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .seccion {
+                padding: 25px 20px;
+            }
+
+            .tarjeta {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <h1>Tecnología</h1>
+
+        <p>
+            Programación, Robótica e Inteligencia Artificial
+        </p>
+
+    </header>
+
+
+    <!-- MENÚ -->
+
+    <nav>
+
+        <a href="index.html">Inicio</a>
+
+        <a href="quienes_somos.html">¿Quiénes somos?</a>
+
+        <a href="pensamiento.html">Pensamiento Computacional</a>
+
+        <a href="tecnologia.html">Tecnología</a>
+
+        <a href="ferias.html">Ferias Tecnológicas</a>
+
+        <a href="proyectos.html">Proyectos</a>
+
+        <a href="galeria.html">Galería</a>
+
+        <a href="noticias.html">Noticias</a>
+
+        <a href="recursos.html">Recursos</a>
+
+        <a href="contacto.html">Contacto</a>
+
+    </nav>
+
+
+    <main class="contenedor">
+
+
+        <!-- INTRODUCCIÓN -->
+
+        <section class="seccion">
+
+            <h2>Tecnología e innovación</h2>
+
+            <p>
+                La tecnología permite crear herramientas y soluciones para
+                diferentes necesidades. En la educación también es una
+                herramienta que ayuda a investigar, aprender, crear y
+                resolver problemas.
+            </p>
+
+            <p>
+                En esta sección presentamos tres áreas relacionadas con el
+                pensamiento computacional: programación, robótica e
+                inteligencia artificial.
+            </p>
+
+        </section>
+
+
+        <!-- PROGRAMACIÓN -->
+
+        <section class="seccion">
+
+            <h2>💻 Programación</h2>
+
+            <p>
+                La programación consiste en crear instrucciones que permiten
+                que un computador, aplicación, página web o dispositivo
+                realice determinadas acciones.
+            </p>
+
+            <h3>¿Para qué sirve?</h3>
+
+            <ul class="lista">
+
+                <li>Crear páginas web.</li>
+
+                <li>Desarrollar aplicaciones.</li>
+
+                <li>Crear videojuegos.</li>
+
+                <li>Automatizar tareas.</li>
+
+                <li>Controlar dispositivos.</li>
+
+                <li>Resolver problemas mediante algoritmos.</li>
+
+            </ul>
+
+            <div class="ejemplo">
+
+                <strong>Ejemplo:</strong>
+
+                <p>
+                    En este proyecto utilizamos HTML para organizar el
+                    contenido de las páginas y CSS para diseñar su apariencia.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ROBÓTICA -->
+
+        <section class="seccion">
+
+            <h2>🤖 Robótica</h2>
+
+            <p>
+                La robótica combina conocimientos de programación, electrónica
+                y mecánica para diseñar máquinas capaces de realizar
+                diferentes tareas.
+            </p>
+
+            <h3>¿Qué podemos aprender con la robótica?</h3>
+
+            <ul class="lista">
+
+                <li>Programación.</li>
+
+                <li>Electrónica básica.</li>
+
+                <li>Automatización.</li>
+
+                <li>Resolución de problemas.</li>
+
+                <li>Diseño y construcción.</li>
+
+                <li>Trabajo en equipo.</li>
+
+            </ul>
+
+            <div class="ejemplo">
+
+                <strong>Ejemplo:</strong>
+
+                <p>
+                    Un robot puede ser programado para seguir una línea,
+                    detectar obstáculos o responder a sensores.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTELIGENCIA ARTIFICIAL -->
+
+        <section class="seccion">
+
+            <h2>🧠 Inteligencia Artificial</h2>
+
+            <p>
+                La inteligencia artificial, conocida como IA, reúne
+                tecnologías que permiten crear sistemas capaces de realizar
+                tareas que normalmente requieren capacidades humanas, como
+                analizar información, reconocer patrones o generar respuestas.
+            </p>
+
+            <h3>Aplicaciones</h3>
+
+            <ul class="lista">
+
+                <li>Asistentes virtuales.</li>
+
+                <li>Reconocimiento de imágenes.</li>
+
+                <li>Traducción de idiomas.</li>
+
+                <li>Educación.</li>
+
+                <li>Análisis de información.</li>
+
+                <li>Robótica.</li>
+
+            </ul>
+
+            <h3>Uso responsable</h3>
+
+            <p>
+                La inteligencia artificial debe utilizarse de forma
+                responsable. Es importante verificar la información, proteger
+                los datos personales y utilizar estas herramientas como apoyo
+                para aprender.
+            </p>
+
+        </section>
+
+
+        <!-- RELACIÓN -->
+
+        <section class="seccion">
+
+            <h2>¿Cómo se relacionan?</h2>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+
+                    <h3>🧠 Pensamiento Computacional</h3>
+
+                    <p>
+                        Ayuda a analizar un problema y organizar una solución.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>💻 Programación</h3>
+
+                    <p>
+                        Permite convertir una solución en instrucciones que
+                        puede ejecutar un computador.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>🤖 Robótica e IA</h3>
+
+                    <p>
+                        Utilizan programación y tecnología para crear sistemas
+                        capaces de realizar diferentes tareas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMPORTANCIA -->
+
+        <section class="seccion">
+
+            <h2>Importancia en la educación</h2>
+
+            <p>
+                Aprender programación, robótica e inteligencia artificial
+                permite desarrollar habilidades como la creatividad,
+                la lógica, el pensamiento crítico y la resolución de problemas.
+            </p>
+
+            <p>
+                También ayuda a comprender mejor las tecnologías que forman
+                parte de nuestra vida cotidiana.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            Somos Nodo de Pensamiento Computacional
+        </p>
+
+        <p>
+            Colegio Técnico San Carlos de San Gil
+        </p>
+
+        <p>
+            Área de Tecnología e Informática
+        </p>
+
+        <p>
+            Proyecto académico
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

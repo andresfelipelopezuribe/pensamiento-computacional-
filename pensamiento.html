@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+        content="Información sobre pensamiento computacional, sus elementos e importancia.">
+
     <title>Pensamiento Computacional</title>
 
     <style>
+
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background: #f2f6f8;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7f9;
             color: #222;
+            line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(135deg, #0b3954, #087e8b);
+            background: linear-gradient(135deg, #073b4c, #087e8b);
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 55px 20px;
         }
 
         header h1 {
@@ -32,20 +38,25 @@
         }
 
         header p {
-            font-size: 18px;
+            font-size: 19px;
         }
 
         nav {
-            background: #062c3d;
-            text-align: center;
+            background-color: #062c3d;
             padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 12px;
             font-weight: bold;
+            margin: 0 8px;
+            display: inline-block;
+            padding: 5px;
         }
 
         nav a:hover {
@@ -53,79 +64,94 @@
         }
 
         .contenedor {
+            width: 90%;
             max-width: 1100px;
             margin: 35px auto;
-            padding: 20px;
         }
 
-        .introduccion {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+        .seccion {
+            background-color: white;
+            padding: 35px;
             margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
         }
 
-        .introduccion h2 {
+        .seccion h2 {
             color: #087e8b;
+            font-size: 29px;
             margin-bottom: 15px;
         }
 
-        .introduccion p {
+        .seccion h3 {
+            color: #073b4c;
+            margin-bottom: 10px;
+        }
+
+        .seccion p {
             font-size: 17px;
-            line-height: 1.7;
             text-align: justify;
+            margin-bottom: 12px;
         }
 
         .tarjetas {
             display: flex;
-            gap: 20px;
             flex-wrap: wrap;
+            gap: 20px;
             justify-content: center;
+            margin-top: 25px;
         }
 
         .tarjeta {
-            background: white;
-            width: 47%;
+            background-color: #eef8fa;
+            width: 45%;
             min-width: 280px;
             padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+            border-radius: 12px;
         }
 
         .tarjeta h3 {
-            color: #0b3954;
+            text-align: center;
             margin-bottom: 12px;
-            font-size: 22px;
         }
 
         .tarjeta p {
-            line-height: 1.6;
-            text-align: justify;
+            font-size: 16px;
         }
 
         .ejemplo {
-            background: #eef8fa;
-            margin-top: 30px;
-            padding: 25px;
-            border-radius: 15px;
-        }
-
-        .ejemplo h2 {
-            color: #087e8b;
-            margin-bottom: 15px;
+            background-color: white;
+            border-left: 5px solid #087e8b;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 6px;
         }
 
         .ejemplo p {
-            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        ul,
+        ol {
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+
+        li {
+            font-size: 17px;
+            margin-bottom: 9px;
         }
 
         footer {
-            background: #062c3d;
+            background-color: #062c3d;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 30px 20px;
             margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
         }
 
         @media (max-width: 700px) {
@@ -136,113 +162,361 @@
 
             nav a {
                 display: block;
-                margin: 10px;
+                margin: 8px;
+            }
+
+            .seccion {
+                padding: 25px 20px;
             }
 
             .tarjeta {
                 width: 100%;
             }
+
         }
+
     </style>
 </head>
 
+
 <body>
 
+    <!-- ENCABEZADO -->
+
     <header>
+
         <h1>Pensamiento Computacional</h1>
-        <p>Aprender a pensar para resolver problemas</p>
+
+        <p>
+            Analizar problemas, organizar ideas y encontrar soluciones
+        </p>
+
     </header>
 
+
+    <!-- MENÚ -->
+
     <nav>
+
         <a href="index.html">Inicio</a>
+
         <a href="quienes_somos.html">¿Quiénes somos?</a>
+
         <a href="pensamiento.html">Pensamiento Computacional</a>
+
+        <a href="tecnologia.html">Tecnología</a>
+
+        <a href="ferias.html">Ferias Tecnológicas</a>
+
         <a href="proyectos.html">Proyectos</a>
+
         <a href="galeria.html">Galería</a>
+
+        <a href="noticias.html">Noticias</a>
+
+        <a href="recursos.html">Recursos</a>
+
         <a href="contacto.html">Contacto</a>
+
     </nav>
+
 
     <main class="contenedor">
 
-        <section class="introduccion">
 
-            <h2>¿Qué es el Pensamiento Computacional?</h2>
+        <!-- DEFINICIÓN -->
+
+        <section class="seccion">
+
+            <h2>¿Qué es el pensamiento computacional?</h2>
 
             <p>
-                El Pensamiento Computacional es una forma de analizar
-                problemas y encontrar soluciones de manera organizada,
-                lógica y creativa. No se utiliza solamente para programar,
-                también puede aplicarse en situaciones de la vida diaria,
-                en la educación y en diferentes áreas del conocimiento.
+                El pensamiento computacional es una forma de analizar problemas
+                y crear soluciones de manera lógica, organizada y estructurada.
+            </p>
+
+            <p>
+                Aunque está relacionado con la informática y la programación,
+                no significa solamente utilizar un computador. También podemos
+                aplicar sus estrategias para resolver situaciones de nuestra
+                vida cotidiana.
             </p>
 
         </section>
 
-        <section class="tarjetas">
 
-            <div class="tarjeta">
-                <h3>🔎 Descomposición</h3>
+        <!-- IMPORTANCIA -->
 
-                <p>
-                    Consiste en dividir un problema grande en partes más
-                    pequeñas y fáciles de comprender. De esta manera,
-                    podemos trabajar cada parte por separado hasta
-                    encontrar una solución.
-                </p>
-            </div>
+        <section class="seccion">
 
-            <div class="tarjeta">
-                <h3>🔁 Reconocimiento de patrones</h3>
-
-                <p>
-                    Consiste en identificar características o situaciones
-                    que se repiten. Encontrar patrones permite comprender
-                    mejor un problema y encontrar soluciones más rápidamente.
-                </p>
-            </div>
-
-            <div class="tarjeta">
-                <h3>🎯 Abstracción</h3>
-
-                <p>
-                    Consiste en concentrarnos en la información más
-                    importante de un problema y dejar de lado los detalles
-                    que no son necesarios para encontrar una solución.
-                </p>
-            </div>
-
-            <div class="tarjeta">
-                <h3>📋 Algoritmos</h3>
-
-                <p>
-                    Un algoritmo es una serie de pasos ordenados que se
-                    siguen para realizar una tarea o solucionar un problema.
-                    Las recetas de cocina son un ejemplo sencillo de algoritmo.
-                </p>
-            </div>
-
-        </section>
-
-        <section class="ejemplo">
-
-            <h2>💡 Ejemplo en la vida cotidiana</h2>
+            <h2>¿Por qué es importante?</h2>
 
             <p>
-                Preparar una comida puede utilizar Pensamiento Computacional.
-                Primero podemos dividir la tarea en diferentes partes,
-                identificar los ingredientes que necesitamos, organizar
-                los pasos y finalmente seguirlos en un orden determinado.
-                De esta manera logramos alcanzar un resultado.
+                El pensamiento computacional permite desarrollar habilidades
+                como la lógica, la creatividad, el pensamiento crítico y la
+                resolución de problemas.
+            </p>
+
+            <p>
+                También ayuda a organizar mejor la información y a convertir
+                problemas complejos en situaciones más fáciles de comprender
+                y solucionar.
             </p>
 
         </section>
+
+
+        <!-- ELEMENTOS -->
+
+        <section class="seccion">
+
+            <h2>Los cuatro elementos principales</h2>
+
+            <div class="tarjetas">
+
+
+                <!-- DESCOMPOSICIÓN -->
+
+                <div class="tarjeta">
+
+                    <h3>1. Descomposición</h3>
+
+                    <p>
+                        Consiste en dividir un problema grande en problemas
+                        o tareas más pequeñas y fáciles de manejar.
+                    </p>
+
+                    <div class="ejemplo">
+
+                        <strong>Ejemplo:</strong>
+
+                        <p>
+                            Para crear una página web podemos separar el
+                            trabajo en contenido, diseño, imágenes,
+                            programación y publicación.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PATRONES -->
+
+                <div class="tarjeta">
+
+                    <h3>2. Reconocimiento de patrones</h3>
+
+                    <p>
+                        Consiste en encontrar características, situaciones
+                        o problemas que se repiten.
+                    </p>
+
+                    <div class="ejemplo">
+
+                        <strong>Ejemplo:</strong>
+
+                        <p>
+                            Si varios problemas tienen una estructura similar,
+                            podemos utilizar una estrategia parecida para
+                            resolverlos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ABSTRACCIÓN -->
+
+                <div class="tarjeta">
+
+                    <h3>3. Abstracción</h3>
+
+                    <p>
+                        Consiste en identificar la información más importante
+                        y dejar de lado los detalles que no son necesarios.
+                    </p>
+
+                    <div class="ejemplo">
+
+                        <strong>Ejemplo:</strong>
+
+                        <p>
+                            Un mapa muestra las calles y lugares principales
+                            sin mostrar todos los objetos que existen en
+                            una ciudad.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ALGORITMOS -->
+
+                <div class="tarjeta">
+
+                    <h3>4. Algoritmos</h3>
+
+                    <p>
+                        Son instrucciones organizadas paso a paso para
+                        solucionar un problema o realizar una tarea.
+                    </p>
+
+                    <div class="ejemplo">
+
+                        <strong>Ejemplo:</strong>
+
+                        <p>
+                            Una receta de cocina tiene pasos ordenados que
+                            debemos seguir para preparar un alimento.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- APLICACIONES -->
+
+        <section class="seccion">
+
+            <h2>¿Dónde podemos utilizarlo?</h2>
+
+            <p>
+                El pensamiento computacional puede aplicarse en diferentes
+                áreas y situaciones.
+            </p>
+
+            <ul>
+
+                <li>Programación y desarrollo de páginas web.</li>
+
+                <li>Robótica.</li>
+
+                <li>Inteligencia artificial.</li>
+
+                <li>Matemáticas.</li>
+
+                <li>Ciencias.</li>
+
+                <li>Diseño de proyectos.</li>
+
+                <li>Resolución de problemas cotidianos.</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- EJEMPLO PASO A PASO -->
+
+        <section class="seccion">
+
+            <h2>Ejemplo práctico</h2>
+
+            <p>
+                Supongamos que queremos organizar una actividad tecnológica
+                con varios estudiantes.
+            </p>
+
+            <ol>
+
+                <li>
+                    <strong>Descomposición:</strong>
+                    dividimos la actividad en diferentes tareas.
+                </li>
+
+                <li>
+                    <strong>Patrones:</strong>
+                    identificamos las tareas que se repiten.
+                </li>
+
+                <li>
+                    <strong>Abstracción:</strong>
+                    seleccionamos la información realmente importante.
+                </li>
+
+                <li>
+                    <strong>Algoritmo:</strong>
+                    organizamos las tareas en un orden lógico.
+                </li>
+
+            </ol>
+
+            <p>
+                De esta manera conseguimos transformar un problema grande
+                en una serie de pasos más sencillos.
+            </p>
+
+        </section>
+
+
+        <!-- RELACIÓN CON TECNOLOGÍA -->
+
+        <section class="seccion">
+
+            <h2>Relación con la tecnología</h2>
+
+            <p>
+                El pensamiento computacional es una base importante para
+                aprender programación, robótica e inteligencia artificial.
+                Antes de crear una solución tecnológica es necesario
+                comprender el problema y organizar una estrategia.
+            </p>
+
+        </section>
+
+
+        <!-- CONCLUSIÓN -->
+
+        <section class="seccion">
+
+            <h2>Conclusión</h2>
+
+            <p>
+                Aprender pensamiento computacional nos ayuda a enfrentar
+                problemas de una manera más organizada. Sus cuatro elementos
+                principales nos permiten dividir problemas, reconocer patrones,
+                identificar la información importante y construir soluciones
+                mediante pasos ordenados.
+            </p>
+
+        </section>
+
 
     </main>
 
+
+    <!-- PIE DE PÁGINA -->
+
     <footer>
-        <p>Proyecto educativo - Nodo de Pensamiento Computacional</p>
-        <p>Área de Tecnología e Informática</p>
+
+        <p>
+            Somos Nodo de Pensamiento Computacional
+        </p>
+
+        <p>
+            Colegio Técnico San Carlos de San Gil
+        </p>
+
+        <p>
+            Área de Tecnología e Informática
+        </p>
+
+        <p>
+            Proyecto académico
+        </p>
+
     </footer>
 
+
 </body>
+
 </html>

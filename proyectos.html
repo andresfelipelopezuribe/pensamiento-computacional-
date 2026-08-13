@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+        content="Proyectos del Nodo de Pensamiento Computacional.">
+
     <title>Proyectos</title>
 
     <style>
+
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background: #f2f6f8;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7f9;
             color: #222;
+            line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(135deg, #0b3954, #087e8b);
+            background: linear-gradient(135deg, #073b4c, #087e8b);
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 55px 20px;
         }
 
         header h1 {
@@ -32,20 +38,25 @@
         }
 
         header p {
-            font-size: 18px;
+            font-size: 19px;
         }
 
         nav {
-            background: #062c3d;
-            text-align: center;
+            background-color: #062c3d;
             padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 12px;
             font-weight: bold;
+            margin: 0 8px;
+            display: inline-block;
+            padding: 5px;
         }
 
         nav a:hover {
@@ -53,69 +64,103 @@
         }
 
         .contenedor {
+            width: 90%;
             max-width: 1100px;
             margin: 35px auto;
-            padding: 20px;
         }
 
-        .introduccion {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+        .seccion {
+            background-color: white;
+            padding: 35px;
             margin-bottom: 30px;
-        }
-
-        .introduccion h2 {
-            color: #087e8b;
-            margin-bottom: 15px;
-        }
-
-        .introduccion p {
-            line-height: 1.7;
-            font-size: 17px;
-        }
-
-        .proyectos {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .proyecto {
-            background: white;
-            width: 30%;
-            min-width: 260px;
-            padding: 25px;
             border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
         }
 
-        .proyecto h3 {
-            color: #0b3954;
+        .seccion h2 {
+            color: #087e8b;
+            font-size: 29px;
             margin-bottom: 15px;
-            font-size: 22px;
         }
 
-        .proyecto p {
-            line-height: 1.6;
+        .seccion h3 {
+            color: #073b4c;
+            margin-bottom: 10px;
+        }
+
+        .seccion p {
+            font-size: 17px;
             text-align: justify;
+            margin-bottom: 12px;
         }
 
-        .proyecto ul {
+        .tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .tarjeta {
+            background-color: #eef8fa;
+            width: 30%;
+            min-width: 250px;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .tarjeta h3 {
+            margin-bottom: 10px;
+        }
+
+        .tarjeta p {
+            text-align: justify;
+            font-size: 16px;
+        }
+
+        .etapa {
+            background-color: #f0f6f8;
+            border-left: 5px solid #087e8b;
+            padding: 20px;
             margin-top: 15px;
-            padding-left: 20px;
-            line-height: 1.8;
+            border-radius: 8px;
+        }
+
+        .etapa h3 {
+            margin-bottom: 8px;
+        }
+
+        .espacio {
+            border: 2px dashed #9bb8bf;
+            padding: 35px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #5b6b70;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+
+        li {
+            font-size: 17px;
+            margin-bottom: 9px;
         }
 
         footer {
-            background: #062c3d;
+            background-color: #062c3d;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 30px 20px;
             margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
         }
 
         @media (max-width: 700px) {
@@ -126,108 +171,453 @@
 
             nav a {
                 display: block;
-                margin: 10px;
+                margin: 8px;
             }
 
-            .proyecto {
+            .seccion {
+                padding: 25px 20px;
+            }
+
+            .tarjeta {
                 width: 100%;
             }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
+    <!-- ENCABEZADO -->
+
     <header>
-        <h1>Nuestros Proyectos</h1>
-        <p>Aplicando el Pensamiento Computacional</p>
+
+        <h1>Proyectos</h1>
+
+        <p>
+            Ideas, soluciones e innovación tecnológica
+        </p>
+
     </header>
 
+
+    <!-- MENÚ -->
+
     <nav>
+
         <a href="index.html">Inicio</a>
+
         <a href="quienes_somos.html">¿Quiénes somos?</a>
+
         <a href="pensamiento.html">Pensamiento Computacional</a>
+
+        <a href="tecnologia.html">Tecnología</a>
+
+        <a href="ferias.html">Ferias Tecnológicas</a>
+
         <a href="proyectos.html">Proyectos</a>
+
         <a href="galeria.html">Galería</a>
+
+        <a href="noticias.html">Noticias</a>
+
+        <a href="recursos.html">Recursos</a>
+
         <a href="contacto.html">Contacto</a>
+
     </nav>
+
 
     <main class="contenedor">
 
-        <section class="introduccion">
+
+        <!-- INTRODUCCIÓN -->
+
+        <section class="seccion">
 
             <h2>Proyectos tecnológicos</h2>
 
             <p>
-                En esta sección presentamos diferentes ideas y proyectos
-                relacionados con la tecnología y el Pensamiento Computacional.
-                Estos proyectos permiten poner en práctica la creatividad,
-                la lógica y la resolución de problemas.
+                Los proyectos tecnológicos permiten aplicar los conocimientos
+                aprendidos para crear soluciones a diferentes necesidades
+                o problemas.
+            </p>
+
+            <p>
+                En esta sección presentaremos los proyectos realizados por
+                los estudiantes, explicando sus objetivos, procesos y
+                resultados.
             </p>
 
         </section>
 
-        <section class="proyectos">
 
-            <div class="proyecto">
+        <!-- PROYECTO 1 -->
 
-                <h3>💻 Página Web</h3>
+        <section class="seccion">
+
+            <h2>Proyecto 1</h2>
+
+            <div class="tarjeta" style="width: 100%;">
+
+                <h3>Nombre del proyecto</h3>
 
                 <p>
-                    Creación de una página web utilizando HTML y CSS para
-                    organizar información de manera clara y atractiva.
+                    <strong>Nombre:</strong>
+                    ______________________________
                 </p>
 
-                <ul>
-                    <li>Diseño web</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
+                <p>
+                    <strong>Integrantes:</strong>
+                    ______________________________
+                </p>
+
+                <p>
+                    <strong>Descripción:</strong>
+                    Aquí escribiremos de qué trata el proyecto.
+                </p>
 
             </div>
 
-            <div class="proyecto">
 
-                <h3>🤖 Proyecto de Robótica</h3>
+            <div class="etapa">
+
+                <h3>🎯 Objetivo</h3>
 
                 <p>
-                    Desarrollo de ideas relacionadas con robots y sistemas
-                    automatizados para solucionar diferentes problemas.
+                    Espacio para escribir el objetivo principal del proyecto.
                 </p>
-
-                <ul>
-                    <li>Robótica</li>
-                    <li>Sensores</li>
-                    <li>Automatización</li>
-                </ul>
 
             </div>
 
-            <div class="proyecto">
 
-                <h3>🧠 Algoritmos</h3>
+            <div class="etapa">
+
+                <h3>⚙️ ¿Cómo funciona?</h3>
 
                 <p>
-                    Creación de algoritmos mediante pasos organizados para
-                    resolver problemas de manera lógica y eficiente.
+                    Aquí explicaremos cómo funciona el proyecto y qué
+                    tecnologías utiliza.
                 </p>
 
-                <ul>
-                    <li>Lógica</li>
-                    <li>Algoritmos</li>
-                    <li>Resolución de problemas</li>
-                </ul>
+            </div>
+
+
+            <div class="etapa">
+
+                <h3>🏆 Resultado</h3>
+
+                <p>
+                    Espacio para colocar el resultado obtenido.
+                </p>
 
             </div>
 
         </section>
 
+
+        <!-- PROYECTO 2 -->
+
+        <section class="seccion">
+
+            <h2>Proyecto 2</h2>
+
+            <div class="tarjeta" style="width: 100%;">
+
+                <h3>Nombre del proyecto</h3>
+
+                <p>
+                    <strong>Nombre:</strong>
+                    ______________________________
+                </p>
+
+                <p>
+                    <strong>Integrantes:</strong>
+                    ______________________________
+                </p>
+
+                <p>
+                    <strong>Descripción:</strong>
+                    Aquí escribiremos de qué trata el proyecto.
+                </p>
+
+            </div>
+
+
+            <div class="etapa">
+
+                <h3>🎯 Objetivo</h3>
+
+                <p>
+                    Espacio para escribir el objetivo principal del proyecto.
+                </p>
+
+            </div>
+
+
+            <div class="etapa">
+
+                <h3>⚙️ ¿Cómo funciona?</h3>
+
+                <p>
+                    Aquí explicaremos cómo funciona el proyecto.
+                </p>
+
+            </div>
+
+
+            <div class="etapa">
+
+                <h3>🏆 Resultado</h3>
+
+                <p>
+                    Espacio para colocar el resultado obtenido.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROYECTO 3 -->
+
+        <section class="seccion">
+
+            <h2>Proyecto 3</h2>
+
+            <div class="tarjeta" style="width: 100%;">
+
+                <h3>Nombre del proyecto</h3>
+
+                <p>
+                    <strong>Nombre:</strong>
+                    ______________________________
+                </p>
+
+                <p>
+                    <strong>Integrantes:</strong>
+                    ______________________________
+                </p>
+
+                <p>
+                    <strong>Descripción:</strong>
+                    Aquí escribiremos de qué trata el proyecto.
+                </p>
+
+            </div>
+
+
+            <div class="etapa">
+
+                <h3>🎯 Objetivo</h3>
+
+                <p>
+                    Espacio para escribir el objetivo principal del proyecto.
+                </p>
+
+            </div>
+
+
+            <div class="etapa">
+
+                <h3>⚙️ ¿Cómo funciona?</h3>
+
+                <p>
+                    Aquí explicaremos cómo funciona el proyecto.
+                </p>
+
+            </div>
+
+
+            <div class="etapa">
+
+                <h3>🏆 Resultado</h3>
+
+                <p>
+                    Espacio para colocar el resultado obtenido.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ETAPAS -->
+
+        <section class="seccion">
+
+            <h2>Etapas para desarrollar un proyecto</h2>
+
+            <div class="tarjetas">
+
+
+                <div class="tarjeta">
+
+                    <h3>1. Identificar</h3>
+
+                    <p>
+                        Identificamos el problema o necesidad que queremos
+                        solucionar.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>2. Investigar</h3>
+
+                    <p>
+                        Buscamos información y analizamos posibles soluciones.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>3. Diseñar</h3>
+
+                    <p>
+                        Organizamos las ideas y planeamos cómo será nuestra
+                        solución.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>4. Construir</h3>
+
+                    <p>
+                        Desarrollamos el proyecto utilizando las herramientas
+                        necesarias.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>5. Probar</h3>
+
+                    <p>
+                        Comprobamos si nuestra solución funciona correctamente.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>6. Mejorar</h3>
+
+                    <p>
+                        Corregimos errores y realizamos mejoras al proyecto.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- HABILIDADES -->
+
+        <section class="seccion">
+
+            <h2>Habilidades que desarrollamos</h2>
+
+            <ul>
+
+                <li>Creatividad.</li>
+
+                <li>Pensamiento lógico.</li>
+
+                <li>Resolución de problemas.</li>
+
+                <li>Trabajo en equipo.</li>
+
+                <li>Investigación.</li>
+
+                <li>Comunicación.</li>
+
+                <li>Uso responsable de la tecnología.</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- FOTOS -->
+
+        <section class="seccion">
+
+            <h2>Imágenes de los proyectos</h2>
+
+            <p>
+                Aquí podremos colocar fotografías de los proyectos cuando
+                tengamos imágenes propias para publicar.
+            </p>
+
+            <div class="espacio">
+
+                📷 Espacio reservado para fotografías de los proyectos.
+
+            </div>
+
+        </section>
+
+
+        <!-- CONCLUSIÓN -->
+
+        <section class="seccion">
+
+            <h2>Conclusión</h2>
+
+            <p>
+                Los proyectos tecnológicos nos permiten aprender mediante
+                la práctica. Al investigar, diseñar, construir y probar
+                nuestras ideas podemos convertir un problema en una
+                oportunidad para crear una solución.
+            </p>
+
+        </section>
+
+
     </main>
 
+
+    <!-- PIE DE PÁGINA -->
+
     <footer>
-        <p>Proyecto educativo - Nodo de Pensamiento Computacional</p>
-        <p>Área de Tecnología e Informática</p>
+
+        <p>
+            Somos Nodo de Pensamiento Computacional
+        </p>
+
+        <p>
+            Colegio Técnico San Carlos de San Gil
+        </p>
+
+        <p>
+            Área de Tecnología e Informática
+        </p>
+
+        <p>
+            Proyecto académico
+        </p>
+
     </footer>
 
+
 </body>
+
 </html>

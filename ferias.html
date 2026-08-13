@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Ferias y actividades relacionadas con el pensamiento computacional y la tecnología.">
+
+    <title>Ferias Tecnológicas</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #073b4c, #087e8b);
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 19px;
+        }
+
+        nav {
+            background-color: #062c3d;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 8px;
+            display: inline-block;
+            padding: 5px;
+        }
+
+        nav a:hover {
+            color: #4dd0e1;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1100px;
+            margin: 35px auto;
+        }
+
+        .seccion {
+            background-color: white;
+            padding: 35px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+        }
+
+        .seccion h2 {
+            color: #087e8b;
+            font-size: 29px;
+            margin-bottom: 15px;
+        }
+
+        .seccion h3 {
+            color: #073b4c;
+            margin-bottom: 10px;
+        }
+
+        .seccion p {
+            font-size: 17px;
+            text-align: justify;
+            margin-bottom: 12px;
+        }
+
+        .tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .tarjeta {
+            background-color: #eef8fa;
+            width: 30%;
+            min-width: 250px;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .tarjeta h3 {
+            margin-bottom: 10px;
+        }
+
+        .tarjeta p {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .espacio {
+            border: 2px dashed #9bb8bf;
+            padding: 35px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #5b6b70;
+        }
+
+        .lista {
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+
+        .lista li {
+            font-size: 17px;
+            margin-bottom: 9px;
+        }
+
+        footer {
+            background-color: #062c3d;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .seccion {
+                padding: 25px 20px;
+            }
+
+            .tarjeta {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <h1>Ferias Tecnológicas</h1>
+
+        <p>
+            Espacios para compartir proyectos, ideas e innovación
+        </p>
+
+    </header>
+
+
+    <!-- MENÚ -->
+
+    <nav>
+
+        <a href="index.html">Inicio</a>
+
+        <a href="quienes_somos.html">¿Quiénes somos?</a>
+
+        <a href="pensamiento.html">Pensamiento Computacional</a>
+
+        <a href="tecnologia.html">Tecnología</a>
+
+        <a href="ferias.html">Ferias Tecnológicas</a>
+
+        <a href="proyectos.html">Proyectos</a>
+
+        <a href="galeria.html">Galería</a>
+
+        <a href="noticias.html">Noticias</a>
+
+        <a href="recursos.html">Recursos</a>
+
+        <a href="contacto.html">Contacto</a>
+
+    </nav>
+
+
+    <main class="contenedor">
+
+
+        <!-- INTRODUCCIÓN -->
+
+        <section class="seccion">
+
+            <h2>¿Qué son las ferias tecnológicas?</h2>
+
+            <p>
+                Las ferias tecnológicas son espacios donde los estudiantes
+                pueden presentar proyectos, compartir conocimientos y mostrar
+                soluciones relacionadas con la tecnología, la ciencia y la
+                innovación.
+            </p>
+
+            <p>
+                Estas actividades permiten aplicar lo aprendido en clase y
+                desarrollar habilidades como la creatividad, la comunicación,
+                la investigación y el trabajo en equipo.
+            </p>
+
+        </section>
+
+
+        <!-- FERIAS -->
+
+        <section class="seccion">
+
+            <h2>Ferias y actividades</h2>
+
+            <p>
+                En este espacio presentaremos las ferias y actividades
+                tecnológicas en las que participe nuestro grupo o nuestra
+                institución.
+            </p>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+
+                    <h3>Feria 1</h3>
+
+                    <p>
+                        Espacio reservado para agregar el nombre, fecha y
+                        descripción de una feria.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>Feria 2</h3>
+
+                    <p>
+                        Espacio reservado para agregar información de otra
+                        actividad tecnológica.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>Feria 3</h3>
+
+                    <p>
+                        Espacio reservado para una futura feria o actividad.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROYECTOS PRESENTADOS -->
+
+        <section class="seccion">
+
+            <h2>Proyectos presentados en las ferias</h2>
+
+            <p>
+                Los proyectos que sean presentados podrán ser registrados
+                en esta sección junto con una pequeña descripción.
+            </p>
+
+            <div class="espacio">
+
+                <p>
+                    📌 Aquí agregaremos los proyectos reales cuando tengamos
+                    la información.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIENCIAS -->
+
+        <section class="seccion">
+
+            <h2>Experiencias de los estudiantes</h2>
+
+            <p>
+                Participar en una feria tecnológica permite poner en práctica
+                los conocimientos aprendidos y compartirlos con otras personas.
+            </p>
+
+            <ul class="lista">
+
+                <li>
+                    Desarrollar la creatividad.
+                </li>
+
+                <li>
+                    Aprender a trabajar en equipo.
+                </li>
+
+                <li>
+                    Mejorar la comunicación.
+                </li>
+
+                <li>
+                    Presentar proyectos frente a otras personas.
+                </li>
+
+                <li>
+                    Buscar soluciones a diferentes problemas.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- FOTOGRAFÍAS -->
+
+        <section class="seccion">
+
+            <h2>Fotografías</h2>
+
+            <p>
+                En esta sección colocaremos fotografías de las ferias y
+                actividades realizadas por el grupo.
+            </p>
+
+            <div class="espacio">
+
+                <p>
+                    📸 Espacio reservado para fotografías.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULTADOS -->
+
+        <section class="seccion">
+
+            <h2>Resultados</h2>
+
+            <p>
+                Aquí se podrán publicar los resultados, reconocimientos,
+                aprendizajes o experiencias obtenidas durante las actividades.
+            </p>
+
+            <div class="espacio">
+
+                <p>
+                    🏆 Espacio reservado para resultados y reconocimientos.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONCLUSIÓN -->
+
+        <section class="seccion">
+
+            <h2>Conclusión</h2>
+
+            <p>
+                Las ferias tecnológicas son una oportunidad para aprender
+                haciendo. A través de ellas los estudiantes pueden demostrar
+                sus conocimientos, compartir sus ideas y conocer diferentes
+                formas de utilizar la tecnología.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            Somos Nodo de Pensamiento Computacional
+        </p>
+
+        <p>
+            Colegio Técnico San Carlos de San Gil
+        </p>
+
+        <p>
+            Área de Tecnología e Informática
+        </p>
+
+        <p>
+            Proyecto académico
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
