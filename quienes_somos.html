@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>¿Quiénes somos?</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f6f8;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0b3954, #087e8b);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #062c3d;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4dd0e1;
+        }
+
+        .contenedor {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        .seccion {
+            background: white;
+            margin-bottom: 25px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+        }
+
+        .seccion h2 {
+            color: #087e8b;
+            margin-bottom: 15px;
+        }
+
+        .seccion p {
+            font-size: 17px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .objetivos {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .objetivo {
+            flex: 1;
+            min-width: 220px;
+            background: #eef8fa;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .objetivo h3 {
+            color: #0b3954;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #062c3d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .seccion {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>¿Quiénes somos?</h1>
+        <p>Conociendo nuestro proyecto de Pensamiento Computacional</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="quienes_somos.html">¿Quiénes somos?</a>
+        <a href="pensamiento.html">Pensamiento Computacional</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="contenedor">
+
+        <section class="seccion">
+
+            <h2>¿Quiénes somos?</h2>
+
+            <p>
+                Somos estudiantes interesados en aprender y utilizar la
+                tecnología como una herramienta para solucionar problemas
+                y desarrollar nuevas ideas. Nuestro proyecto busca dar a
+                conocer la importancia del Pensamiento Computacional en
+                nuestra formación académica.
+            </p>
+
+        </section>
+
+        <section class="seccion">
+
+            <h2>Nuestra misión</h2>
+
+            <p>
+                Nuestra misión es promover el aprendizaje de la tecnología,
+                la programación y el Pensamiento Computacional mediante
+                actividades educativas y proyectos que permitan desarrollar
+                la creatividad, la lógica y la capacidad para resolver
+                problemas.
+            </p>
+
+        </section>
+
+        <section class="seccion">
+
+            <h2>Nuestra visión</h2>
+
+            <p>
+                Queremos fortalecer nuestras habilidades tecnológicas y
+                aprender nuevas formas de utilizar la informática para
+                crear proyectos útiles, innovadores y relacionados con
+                las necesidades de nuestro entorno.
+            </p>
+
+        </section>
+
+        <section class="seccion">
+
+            <h2>Nuestros objetivos</h2>
+
+            <div class="objetivos">
+
+                <div class="objetivo">
+                    <h3>🧠 Aprender</h3>
+                    <p>
+                        Comprender los principios del Pensamiento
+                        Computacional.
+                    </p>
+                </div>
+
+                <div class="objetivo">
+                    <h3>💻 Crear</h3>
+                    <p>
+                        Desarrollar proyectos utilizando herramientas
+                        tecnológicas.
+                    </p>
+                </div>
+
+                <div class="objetivo">
+                    <h3>🚀 Innovar</h3>
+                    <p>
+                        Buscar soluciones creativas a diferentes
+                        problemas.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto educativo - Nodo de Pensamiento Computacional</p>
+        <p>Área de Tecnología e Informática</p>
+    </footer>
+
+</body>
+</html>

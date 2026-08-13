@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pensamiento Computacional</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f6f8;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0b3954, #087e8b);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #062c3d;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4dd0e1;
+        }
+
+        .contenedor {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        .introduccion {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+            margin-bottom: 30px;
+        }
+
+        .introduccion h2 {
+            color: #087e8b;
+            margin-bottom: 15px;
+        }
+
+        .introduccion p {
+            font-size: 17px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .tarjetas {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .tarjeta {
+            background: white;
+            width: 47%;
+            min-width: 280px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+        }
+
+        .tarjeta h3 {
+            color: #0b3954;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .tarjeta p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .ejemplo {
+            background: #eef8fa;
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .ejemplo h2 {
+            color: #087e8b;
+            margin-bottom: 15px;
+        }
+
+        .ejemplo p {
+            line-height: 1.7;
+        }
+
+        footer {
+            background: #062c3d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .tarjeta {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pensamiento Computacional</h1>
+        <p>Aprender a pensar para resolver problemas</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="quienes_somos.html">¿Quiénes somos?</a>
+        <a href="pensamiento.html">Pensamiento Computacional</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="contenedor">
+
+        <section class="introduccion">
+
+            <h2>¿Qué es el Pensamiento Computacional?</h2>
+
+            <p>
+                El Pensamiento Computacional es una forma de analizar
+                problemas y encontrar soluciones de manera organizada,
+                lógica y creativa. No se utiliza solamente para programar,
+                también puede aplicarse en situaciones de la vida diaria,
+                en la educación y en diferentes áreas del conocimiento.
+            </p>
+
+        </section>
+
+        <section class="tarjetas">
+
+            <div class="tarjeta">
+                <h3>🔎 Descomposición</h3>
+
+                <p>
+                    Consiste en dividir un problema grande en partes más
+                    pequeñas y fáciles de comprender. De esta manera,
+                    podemos trabajar cada parte por separado hasta
+                    encontrar una solución.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🔁 Reconocimiento de patrones</h3>
+
+                <p>
+                    Consiste en identificar características o situaciones
+                    que se repiten. Encontrar patrones permite comprender
+                    mejor un problema y encontrar soluciones más rápidamente.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🎯 Abstracción</h3>
+
+                <p>
+                    Consiste en concentrarnos en la información más
+                    importante de un problema y dejar de lado los detalles
+                    que no son necesarios para encontrar una solución.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>📋 Algoritmos</h3>
+
+                <p>
+                    Un algoritmo es una serie de pasos ordenados que se
+                    siguen para realizar una tarea o solucionar un problema.
+                    Las recetas de cocina son un ejemplo sencillo de algoritmo.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="ejemplo">
+
+            <h2>💡 Ejemplo en la vida cotidiana</h2>
+
+            <p>
+                Preparar una comida puede utilizar Pensamiento Computacional.
+                Primero podemos dividir la tarea en diferentes partes,
+                identificar los ingredientes que necesitamos, organizar
+                los pasos y finalmente seguirlos en un orden determinado.
+                De esta manera logramos alcanzar un resultado.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto educativo - Nodo de Pensamiento Computacional</p>
+        <p>Área de Tecnología e Informática</p>
+    </footer>
+
+</body>
+</html>

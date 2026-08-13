@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proyectos</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f6f8;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0b3954, #087e8b);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #062c3d;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4dd0e1;
+        }
+
+        .contenedor {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        .introduccion {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+            margin-bottom: 30px;
+        }
+
+        .introduccion h2 {
+            color: #087e8b;
+            margin-bottom: 15px;
+        }
+
+        .introduccion p {
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        .proyectos {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .proyecto {
+            background: white;
+            width: 30%;
+            min-width: 260px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+        }
+
+        .proyecto h3 {
+            color: #0b3954;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .proyecto p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .proyecto ul {
+            margin-top: 15px;
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #062c3d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .proyecto {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nuestros Proyectos</h1>
+        <p>Aplicando el Pensamiento Computacional</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="quienes_somos.html">¿Quiénes somos?</a>
+        <a href="pensamiento.html">Pensamiento Computacional</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="contenedor">
+
+        <section class="introduccion">
+
+            <h2>Proyectos tecnológicos</h2>
+
+            <p>
+                En esta sección presentamos diferentes ideas y proyectos
+                relacionados con la tecnología y el Pensamiento Computacional.
+                Estos proyectos permiten poner en práctica la creatividad,
+                la lógica y la resolución de problemas.
+            </p>
+
+        </section>
+
+        <section class="proyectos">
+
+            <div class="proyecto">
+
+                <h3>💻 Página Web</h3>
+
+                <p>
+                    Creación de una página web utilizando HTML y CSS para
+                    organizar información de manera clara y atractiva.
+                </p>
+
+                <ul>
+                    <li>Diseño web</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+
+            </div>
+
+            <div class="proyecto">
+
+                <h3>🤖 Proyecto de Robótica</h3>
+
+                <p>
+                    Desarrollo de ideas relacionadas con robots y sistemas
+                    automatizados para solucionar diferentes problemas.
+                </p>
+
+                <ul>
+                    <li>Robótica</li>
+                    <li>Sensores</li>
+                    <li>Automatización</li>
+                </ul>
+
+            </div>
+
+            <div class="proyecto">
+
+                <h3>🧠 Algoritmos</h3>
+
+                <p>
+                    Creación de algoritmos mediante pasos organizados para
+                    resolver problemas de manera lógica y eficiente.
+                </p>
+
+                <ul>
+                    <li>Lógica</li>
+                    <li>Algoritmos</li>
+                    <li>Resolución de problemas</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto educativo - Nodo de Pensamiento Computacional</p>
+        <p>Área de Tecnología e Informática</p>
+    </footer>
+
+</body>
+</html>
